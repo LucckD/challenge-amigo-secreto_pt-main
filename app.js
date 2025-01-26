@@ -1,6 +1,8 @@
 let listaDeAmigos = [];
 let amigosSorteados = [];
 
+inserirAmigos();
+
 //esvaziar campo
 function limparCampo() {
     let campo = document.querySelector('input');
