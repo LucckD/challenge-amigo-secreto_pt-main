@@ -14,7 +14,6 @@ function limparCampo() {
 function inserirAmigos() {
     let campoAmigos = document.getElementById('nomesAmigos');
     campoAmigos.innerHTML = '';
-
     if (listaDeAmigos.length === 0) {
         campoAmigos.innerHTML = 'Nenhum amigo adicionado ainda.';
     } else {
@@ -63,9 +62,17 @@ function gerarNomeAleatorio() {
 function sortearAmigo() {
     if (listaDeAmigos.length < 4) {
         alert('Insira pelo menos 4 nomes.');
+    } else if (amigosSorteados === 0) {
+        alert('Todos sorteados.');
     } else {
         let resultadoSorteio = document.getElementById('resultado');
         let nomeSorteado = gerarNomeAleatorio();
         resultadoSorteio.innerHTML = `O nome sorteado foi: <span class="nome-sorteado">${nomeSorteado}</span>`;
     }
 }
+
+function direcionarJogo() {
+    window.location.href = "https://jogo-delta-weld.vercel.app/";
+}
+
+//resolver o problema em que o nome sorteado foi: todos sorteados. Colocar somente a mensagem de "Todos sorteados".
