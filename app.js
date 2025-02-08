@@ -29,9 +29,16 @@ function inserirAmigos() {
 function adicionarAmigo() {
     let inputAmigo = document.querySelector('input').value.trim();
 
+    //expressão para aceitar apenas letras
+    let apenasLetras = /^[A-Za-zÀ-ÿ\s]+$/;
+
     //verificação básica
     if (inputAmigo.length < 3) {
         alert('Digite um nome válido com pelo menos 3 caracteres.');
+
+        //verificação de texto
+    } else if (!apenasLetras.test(inputAmigo)) {
+        alert('O nome deve conter apenas letras.')
     } else if (listaDeAmigos.includes(inputAmigo)) {
         alert('Este nome já foi adicionado. Insira um nome diferente.');
     } else {
