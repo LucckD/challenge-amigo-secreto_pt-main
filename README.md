@@ -22,7 +22,7 @@ A aplicação foi criada utilizando **HTML**, **CSS** e **JavaScript**, com foco
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/usuario/amigo-secreto.git
+   git clone https://github.com/lucckD/amigo-secreto.git
    
 2. Abra o arquivo index.html no seu navegador de preferência.
 
